@@ -1,6 +1,9 @@
 export interface IProduct {
-  id: number;
   name: string;
   amount: string;
   orderId: number;
+}
+
+export interface Product extends IProduct {
+  id: number;
 }
