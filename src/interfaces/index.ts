@@ -9,9 +9,15 @@ export interface Product extends IProduct {
 }
 
 export interface IUser {
-  id?: number;
+  id: number;
   username: string;
   vocation: string;
   level: number;
   password: string;
+}
+
+export interface IOrder {
+  id: number;
+  userId: number;
+  productsIds: number[];
 }
